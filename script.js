@@ -13,9 +13,9 @@ for (let x = 0; x < size; x++) {
     };
 };
 const boxes = document.querySelectorAll('.boxes');
-let boxWidth = ((width/size) - 2) + 'px';
+let boxWidth = ((width /size) - 1.45) + 'px';
 let boxHeight = parseInt(boxWidth)/1.5 + 'px';
-console.log(boxHeight);
+
 boxes.forEach((item) => {
     item.style.width = boxWidth;
     item.style.height = boxHeight;
