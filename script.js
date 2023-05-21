@@ -2,8 +2,10 @@ const container = document.querySelector('.container');
 const width = parseInt(container.style.width, 10);
 
 do {
-    size = parseInt(prompt("How many squares per side? (Enter 2-100)"), 10);
-} while (!Number.isInteger(size) || size < 2 || size > 100);
+    size = prompt("How many squares per side? (Enter 2-100)");
+    sizeInt = parseInt(size, 10);
+    if (size == null) break;
+} while (!Number.isInteger(+size) || sizeInt < 2 || sizeInt > 100);
 
 for (let x = 0; x < size; x++) {
     for (let y = 0; y < size; y++) {
@@ -13,7 +15,7 @@ for (let x = 0; x < size; x++) {
     };
 };
 const boxes = document.querySelectorAll('.boxes');
-let boxWidth = ((width /size) - 1.454) + 'px';
+let boxWidth = ((width /sizeInt) - 1.454) + 'px';
 let boxHeight = parseInt(boxWidth)/1.5 + 'px';
 
 boxes.forEach((item) => {
