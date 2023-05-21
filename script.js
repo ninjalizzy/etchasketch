@@ -19,10 +19,14 @@ let boxHeight = parseInt(boxWidth)/1.5 + 'px';
 boxes.forEach((item) => {
     item.style.width = boxWidth;
     item.style.height = boxHeight;
-});
+})
 
+// function chooseColor() {
+//     document.getElementById('color-picker').addEventListener(('change'), (e) => {
+//         let ink = e.target.value;
+// })};
 let changeColor = (e) => {
-    e.target.style.backgroundColor = "blue";
+    e.target.style.backgroundColor = 'blue';
 };
 
 boxes.forEach((item) => {

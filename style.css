@@ -1,3 +1,7 @@
+/* :root {
+    --color-picker: #af00af;
+} */
+
 .container {
     display: flex;
     flex-wrap: wrap;
