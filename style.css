@@ -1,14 +1,36 @@
-/* :root {
-    --color-picker: #af00af;
-} */
+body {
+    background-color: firebrick;
+    color: rgb(221, 229, 255);
+    text-shadow: 1px 1px 2px darkslategray;
+    text-align: center;
+}
+
+.header {
+    width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin: auto;
+    align-items: center;
+    font-weight: bold;
+}
+h1 {
+    grid-column-start: 2;
+    margin: 8px 0px;
+}
+.color {
+    grid-column-start: 3;
+    margin-left: auto;
+    padding-right: 1rem;
+}
 
 .container {
+    background-color: gray;
     display: flex;
     flex-wrap: wrap;
     margin: auto;
 }
 
 .boxes {
-    border: .5px solid firebrick;
+    border: .5px solid rgba(69,69,69,.69);
     flex: 0 0 auto;
 }   

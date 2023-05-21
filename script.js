@@ -13,7 +13,7 @@ for (let x = 0; x < size; x++) {
     };
 };
 const boxes = document.querySelectorAll('.boxes');
-let boxWidth = ((width /size) - 1.45) + 'px';
+let boxWidth = ((width /size) - 1.454) + 'px';
 let boxHeight = parseInt(boxWidth)/1.5 + 'px';
 
 boxes.forEach((item) => {
@@ -21,12 +21,12 @@ boxes.forEach((item) => {
     item.style.height = boxHeight;
 })
 
-// function chooseColor() {
-//     document.getElementById('color-picker').addEventListener(('change'), (e) => {
-//         let ink = e.target.value;
-// })};
+let ink = '#af00af';
+document.getElementById('color-picker').addEventListener(('change'), (e) => {
+    ink = e.target.value;
+});
 let changeColor = (e) => {
-    e.target.style.backgroundColor = 'blue';
+    e.target.style.backgroundColor = ink;
 };
 
 boxes.forEach((item) => {
