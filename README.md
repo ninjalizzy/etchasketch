@@ -12,3 +12,4 @@ Lessons learned/reviewed:
 Possible improvements:
  - Project originally called for random box color instead of user-picked; could try that
  - Let user choose background color of grid
+ - Add clear button - DONE!
