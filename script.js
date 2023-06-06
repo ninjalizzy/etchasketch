@@ -34,3 +34,9 @@ let changeColor = (e) => {
 boxes.forEach((item) => {
     item.addEventListener('mouseover', changeColor);
 });
+
+function clearGrid() {
+    boxes.forEach((box) => box.style.backgroundColor = 'gray');
+}
+
+document.getElementById('clear').addEventListener('mousedown', clearGrid);
